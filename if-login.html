@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+<p>Начало страницы...</p>
+
+<script>
+var login = prompt('Введите логин:', '');
+if (login == 'Admin') {
+	var password = prompt('Введите пароль:', '');
+	if (password == 'Черный Властелин') {
+		alert('Добро пожаловать');
+	} else if (password == null) {
+		alert('Вход отменен');
+	} else {
+		alert('Я вас не знаю');
+	}
+} else if (login == null) {
+	alert('Вход отменен');
+} else {
+	alert('Я вас не знаю');
+}
+
+	
+</script>
+
+<p>...Важная информация!</p>
+
+</body>
+
+</html>
